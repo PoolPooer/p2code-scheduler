@@ -1,0 +1,44 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: p2code-scheduler.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: P2codeScheduler is the Schema for the p2codeschedulers API
+      displayName: P2code Scheduler
+      kind: P2codeScheduler
+      name: p2codeschedulers.cache.example.com
+      version: v1alpha1
+  description: Deployment Scheduler
+  displayName: P2code-scheduler
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - scheduler
+  links:
+  - name: P2code Scheduler
+    url: https://p2code-scheduler.domain
+  maturity: alpha
+  provider:
+    name: Pool
+  version: 0.0.0
