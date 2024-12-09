@@ -22,7 +22,6 @@ import (
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
-
 // P2codeSchedulerSpec represents the desired state of the cluster
 type P2codeSchedulerSpec struct {
 	// Annotations is a slice of strings for scheduler specifications
