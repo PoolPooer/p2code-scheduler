@@ -1,0 +1,21 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.2.5
+    creationTimestamp: null
+  name: scheduler.p2code.redhat.com
+spec:
+  group: p2code.redhat.com
+  names:
+    kind: SchedulerP2code
+    listKind: SchedulerP2codeList
+    plural: schedulerp2codes
+    singular: schedulerp2code
+  scope: Namespaced
+  subresources:
+    status: {}
+  versions:
+    - name: v1alpha1
+      served: true
+      storage: true
