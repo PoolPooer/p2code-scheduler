@@ -49,6 +49,8 @@ type P2codeSchedulerReconciler struct {
 func (r *P2codeSchedulerReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	_ = log.FromContext(ctx)
 
+	log.Info("Reconsile loop running")
+	
 	// TODO(user): your logic here
 
 	return ctrl.Result{}, nil
