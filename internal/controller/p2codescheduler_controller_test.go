@@ -26,9 +26,22 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"sigs.k8s.io/controller-runtime/pkg/client"
 
 	cachev1alpha1 "quay.io/rh-ee-ppower/scheduler-operator/api/v1alpha1"
 )
+
+type P2codeSchedulerReconciler struct {
+	client.Client
+	Scheme *runtime.Scheme
+}
+
+// Reconcile reconciles a P2codeScheduler object
+func (r *P2codeSchedulerReconciler) Reconcile(ctx context.Context, req reconcile.Request) (reconcile.Result, error) {
+	// TODO(user): Add your reconciliation logic here
+	return reconcile.Result{}, nil
+}
 
 var _ = Describe("P2codeScheduler Controller", func() {
 	Context("When reconciling a resource", func() {

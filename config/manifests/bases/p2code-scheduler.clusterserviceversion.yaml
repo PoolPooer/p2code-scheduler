@@ -22,7 +22,7 @@ spec:
     mediatype: ""
   install:
     spec:
-      deployments: null
+      deployments: []
     strategy: ""
   installModes:
   - supported: false
