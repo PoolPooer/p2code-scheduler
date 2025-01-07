@@ -21,10 +21,9 @@ import (
 	"os/exec"
 	"time"
 
+	"github.com/PoolPooer/p2code-scheduler/test/e2e/utils"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-
-	"quay.io/rh-ee-ppower/scheduler-operator/test/utils"
 )
 
 const namespace = "p2code-scheduler-system"
