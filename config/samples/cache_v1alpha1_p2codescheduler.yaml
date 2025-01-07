@@ -1,9 +1,9 @@
 apiVersion: cache.example.com/v1alpha1
 kind: P2codeScheduler
 metadata:
-  labels:
-    app.kubernetes.io/name: p2code-scheduler
-    app.kubernetes.io/managed-by: kustomize
-  name: p2codescheduler-sample
+  name: p2codescheduler-sample 
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"cache.example.com/v1alpha1","kind":"P2codeScheduler","metadata":{"annotations":{},"name":"p2codescheduler-sample","namespace":"default"}}
 spec:
   # TODO(user): Add fields here

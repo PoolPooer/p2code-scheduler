@@ -35,8 +35,8 @@ import (
 	metricsserver "sigs.k8s.io/controller-runtime/pkg/metrics/server"
 	"sigs.k8s.io/controller-runtime/pkg/webhook"
 
+	"github.com/PoolPooer/p2code-scheduler/internal/controller"
 	cachev1alpha1 "quay.io/rh-ee-ppower/scheduler-operator/api/v1alpha1"
-	"quay.io/rh-ee-ppower/scheduler-operator/internal/controller"
 	// +kubebuilder:scaffold:imports
 )
 

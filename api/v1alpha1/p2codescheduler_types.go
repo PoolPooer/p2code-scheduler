@@ -38,6 +38,7 @@ func NewP2codeSchedulerSpec() *P2codeSchedulerSpec {
 			"p2code.filter.platform=",
 			"p2code.filter.location=",
 			"p2code.filter.deviceCat=",
+			"p2code.filter.edgeDevice=",
 			"p2code.filter.type=",
 		},
 	}

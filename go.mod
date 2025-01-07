@@ -1,4 +1,4 @@
-module quay.io/rh-ee-ppower/scheduler-operator
+module github.com/PoolPooer/p2code-scheduler
 
 go 1.22.0
 
